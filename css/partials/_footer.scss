@@ -1,0 +1,27 @@
+//FOOTER
+footer{
+	background: $colorDark;
+	color: #fff;
+	padding: 10px 40px;
+	font-family: $headingFont;
+	span{
+		font-size: 10px;
+	}
+	p{
+		margin: 0;
+	}
+	a{
+		color: $highlightLight;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
+.copyright{
+	float:left;
+}
+
+.resourcesbutton{
+	float:right;
+}

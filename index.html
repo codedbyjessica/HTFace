@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>What's on my face?</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Josefin+Sans" rel="stylesheet">
+	<link rel="shortcut icon" href="http://codedbyjessica.com/whatsonmyface/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="http://codedbyjessica.com/whatsonmyface/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="container"> <!-- for bottom photo -->
+<div class="wrapper"> <!-- for border -->
+<div class="wrapperContent"> <!-- actually wraps content -->
+
+<header id="header">
+	<h1 id="pageTitle"><a href="#" class="applink">What's on my face?</a></h1>
+	<h3 id="pageDescription"> Find out about the potentially harmful ingredients in your everyday cosmetic products </h3>
+</header>
+
+<main id="app">
+	<section class="selection">
+		<form action="">
+			<select name="product" id="brandsList" class="choiceBox">
+				<option value="nothing selected">Choose a brand</option>
+			</select>
+			<input type="radio" name="type" value="Foundations and Bases" id="foundations">
+				<label for ="foundations" class="choiceBox cosmeticType">Foundation</label>
+			<input type="radio" name="type" value="Face Powders" id="powders">
+				<label for="powders" class="choiceBox cosmeticType">Face Powder</label>
+			<input type="radio" name="type" value="Blushes" id="blushes">
+				<label for="blushes" class="choiceBox cosmeticType">Blush</label>
+			<input type="radio" name="type" value="Eye Shadow" id="shadows">
+				<label for="shadows" class="choiceBox cosmeticType">Eye Shadow</label>
+			<input type="radio" name="type" value="Eyeliner/Eyebrow Pencils" id="eyeliners">
+				<label for="eyeliners" class="choiceBox cosmeticType">Eyeliner/Eyebrow</label>
+			<input type="radio" name="type" value="Mascara/Eyelash Products" id="mascaras">
+				<label for="mascaras" class="choiceBox cosmeticType">Mascara</label>
+			<input type="radio" name="type" value="Lip Color - Lipsticks, Liners, and Pencils" id="lipcolors">
+				<label for="lipcolors" class="choiceBox cosmeticType">Lip Color</label>
+			<input type="radio" name="type" value="Lip Gloss/Shine" id="lipgloss">
+				<label for="lipgloss" class="choiceBox cosmeticType">Lip Gloss</label>
+
+			<input type="submit" name="submit" value="Submit" id="submit" class="choiceBox">
+	</form>
+	</section>
+
+	<section id="intro">
+		<h3>Make a selection by choosing a brand and a category of cosmetic products. </h3>
+	</section>
+
+	<section id="product" class="clearfix">
+		<div class="productContainer" id="brandTitle"> <!-- shows brand and type of user selected --> </div>
+		<div class="loadingContainer">
+			<span id="loading"> 
+				<span class="dot dot_1"></span>
+				<span class="dot dot_2"></span>
+				<span class="dot dot_3"></span>
+				<span class="dot dot_4"></span>
+			</span>
+		</div>
+		<div class="productContainer" id="productList"> <!-- lists product in brand and type --> </div>
+		<div class="productContainer" id="productDetail"> <!-- chemical information --> </div>
+	</section>
+</main>
+
+<main id="resources">
+	<h2> Resources</h2>
+	API powered by <a href="https://www.healthdata.gov/dataset/chemicals-cosmetics" target="_blank">HealthData.gov</a>
+	<ul>
+		<li><a href=https://www.fda.gov/ target="_blank"> https://www.fda.gov</a></li>
+		<li><a href="http://www.ewg.org/skindeep" target="_blank">http://www.ewg.org/skindeep</a></li>
+		<li><a href="http://www.purvadevare.com/wp-content/uploads/2015/09/make-up_powder_beauty_feminine_lipstick_2560x1440_hd-wallpaper-1742926.jpg" target="_blank"> http://www.purvadevare.com</a></li>
+	</ul>
+
+	<h3><a href="#" class=applink> Back to Application Page </a></h3>
+</main>
+
+</div> <!-- content wrapper -->
+</div> <!-- wrapper -->
+</div> <!-- container -->
+
+<footer class="clearfix">
+	<div class="copyright">
+		&copy; 2017 <a href="http://codedbyjessica.com/" target="_blank">Coded by Jessica</a> <span>| Developed and designed by Jessica Zhang | 
+		The information presented in this activity is not meant to serve as a strict guideline for the use of products.</span>
+	</div>
+	<div class="resourcesbutton">
+		<a href="#" id=resourceslink> Resources </a>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/brandsmenu.js"></script>
+
+</body>
+</html>
+
+

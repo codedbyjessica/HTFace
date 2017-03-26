@@ -1,0 +1,22 @@
+//HEADER
+
+header{
+	text-align: center;
+	padding-top: 10vh;
+	padding-bottom: 10px;
+}
+
+#pageTitle {
+	font-size: 50px;
+	text-transform: uppercase;
+	a{
+		color: $colorDark;
+		&:hover{
+			color: $colorDark;
+		}
+	}
+}
+
+#pageDescription{
+	font-style: italic;
+}

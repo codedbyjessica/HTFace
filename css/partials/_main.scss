@@ -1,0 +1,143 @@
+//SELECTION
+.selection {
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.choiceBox{
+	padding: 5px;
+	margin: 10px 5px;
+	border: 1px solid $colorDark;
+	cursor: pointer;
+}
+
+.cosmeticType{
+	width: 120px;
+}
+
+#brandsList, #submit{
+	margin: 10px auto;
+}
+
+select, #submit{
+	display: block;
+	outline:none;
+}
+
+select label{
+	background:$highlightLight;
+}
+
+#submit{
+	background-color: $highlightDark;
+	color: #fff;
+	width: 130px;
+	&:hover{
+		color: $colorDark;
+		background-color: #fff;
+	}
+}
+//input
+input[type="radio"] {
+	display:none;
+}
+
+input[type="radio"] + label {
+	background: none;
+}
+
+input[type="radio"]:checked + label {
+	background:$highlightLight;
+}
+
+label{
+	display: inline-block;
+}
+
+//INTRO
+#intro {
+	margin: 30px auto;
+	width: 80%;
+	text-align: center;
+	p{
+		margin:0;
+		padding: 0;
+	}
+}
+
+//PRODUCT
+#product{
+	display: none;
+}
+
+#productList,#productDetail{
+	float:left;
+	width: calc(50% - 30px);
+	padding: 0px 30px;
+}
+
+#productList{
+	background: $colorLight;
+	margin-right: 30px;
+}
+
+#productDetail{
+	background: $colorLight;
+	margin-left: 30px;
+	p{
+		margin-top: 0;
+	}
+}
+
+.loadingContainer{
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+// to avoid the no products found showing up at the beginning
+.productContainer{
+	display:none;
+}
+
+#loading {
+	display: none;
+	color: red;
+}
+
+.svgContainer{
+	margin: 0 auto;
+	text-align: center;
+	p{
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+}
+
+.happy{
+	fill: #f500b8;
+	color: #f500b8;
+}
+
+.middle{
+	fill: #ff8b03;
+	color: #ff8b03;
+}
+
+.sad {
+	fill: #db4242;
+	color: #db4242;
+}
+
+.backToTop{
+	text-align: center;
+	padding: 10px;
+}
+
+#resources {
+	display: none;
+	background-color: $colorLight;
+	padding: 10px 30px;
+}

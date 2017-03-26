@@ -1,0 +1,63 @@
+//GLOBAL
+input, a, p, div {
+	transition: all 0.5s ease;
+}
+
+body {
+	font-family: $contentFont;
+	background-image: url("../hero.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: $colorDark;
+}
+
+a{
+	color: $highlightDark;
+	text-decoration: none;
+	&:hover{
+		color: $colorDark;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headingFont;
+	padding: 0;
+	margin-top: 0;
+}
+
+h4{
+	margin:0;
+}
+
+h3 span{
+	color:$highlightDark;
+}
+
+p, h2 {
+	margin: 15px 0;
+}
+
+.wrapper{
+	margin: 40px;
+	margin-bottom: 0px;
+	border: 2px solid $colorDark;
+	padding: 20px;
+	min-height: 85vh;
+}
+
+.wrapperContent{
+	margin: 30px;
+}
+
+.container {
+	background-image: url("../herobottom.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 40px;
+}
+
+.mobileOnly{
+	display: none;
+}

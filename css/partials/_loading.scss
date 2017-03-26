@@ -1,0 +1,55 @@
+//loading animation
+$animationLength: 1s;
+$dotSize: 10px;
+$dotScale: 1.2;
+
+.dot {
+	display: inline-block;
+	width: $dotSize;
+	height: $dotSize;
+	border-radius: $dotSize * 0.5;
+	margin: 10px;
+}
+
+.dot_1 {
+	animation: animateDot1 $animationLength linear infinite;
+	animation-direction: alternate;
+}
+
+.dot_2 {
+	animation: animateDot2 $animationLength linear infinite;
+	animation-delay: $animationLength / 12;
+	animation-direction: alternate;
+}
+
+.dot_3 {
+	animation: animateDot3 $animationLength linear infinite;
+	animation-delay: $animationLength / 6;  
+	animation-direction: alternate;
+}
+
+.dot_4 {
+	animation: animateDot4 $animationLength linear infinite;
+	animation-delay: $animationLength / 3;
+	animation-direction: alternate;
+}
+
+@keyframes animateDot1 {
+	0% {background-color: $highlightLight;}
+	100% {background-color: #ff8b03; transform: scale($dotScale)}
+}
+
+@keyframes animateDot2 {
+	0% {background-color: $highlightLight;}  
+	100% {background-color: #db4242; transform: scale($dotScale)}
+}
+
+@keyframes animateDot3 {
+	0% {background-color: $highlightLight;}
+	100% {background-color: #f500b8; transform: scale($dotScale)}
+}
+
+@keyframes animateDot4 {
+	0% {background-color: $highlightLight; }
+	100% {background-color: $highlightDark; transform: scale($dotScale);}
+}
